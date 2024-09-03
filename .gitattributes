@@ -1,2 +1,18 @@
-# Auto detect text files and perform LF normalization
+# Tratamento de fim de linha
 * text=auto
+
+# Binários
+*.png binary
+*.jpg binary
+*.gif binary
+
+# Linguagens
+*.js linguist-language=JavaScript
+*.md linguist-language=Markdown
+
+# SVG
+*.svg text
+
+# Scripts e arquivos de configuração
+*.html text
+*.css text

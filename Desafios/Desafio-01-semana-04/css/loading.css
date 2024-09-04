@@ -1,0 +1,23 @@
+body {
+    background-color: #FF6064;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 205px;
+    height: 90vh;
+}
+
+.logo-pomo, .loading {
+    width: 220px;
+    height: 220px;
+}
+
+.loading {
+    width: 60px;
+    height: 60px;
+}
+    

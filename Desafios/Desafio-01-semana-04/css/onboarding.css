@@ -1,0 +1,123 @@
+
+.onboarding-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+.navigation button {
+    padding: 0; 
+    margin: 5px; 
+    border: none;
+    background-color: #FF6064;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 330px; 
+    height: 40px; 
+    font-size: 16px;
+ 
+}
+
+.navigation button:hover {
+    box-shadow: 0px 4px 4px 0px #000000B2;
+    transition: transform 100ms ease-in-out, background-color 200ms ease-in-out;
+    transform: scale(1.05);
+}
+
+
+.slides-area {
+    display: flex;
+    transition: margin 500ms ease-in-out;
+    position: relative;
+  }
+
+
+.indicator {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    position: relative;
+    overflow: hidden; 
+}
+
+.slide.active {
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    left: 200px; 
+    top: 20%;
+    cursor: pointer;
+}
+
+
+.arrow img.svg-img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 300ms ease-in-out; 
+}
+
+
+.arrow:hover img.svg-img {
+    filter: invert(26%) sepia(84%) saturate(3323%) hue-rotate(-0deg) brightness(92%) contrast(95%);
+}
+
+
+.dot {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 300ms ease-in-out;
+}
+
+.dot.active {
+    background-color: #FF6064;
+    border-radius: 20px;
+    width: 30px; 
+    height: 16px; 
+    transform: scaleX(1.1); 
+    animation: expandAndShrink 500ms ease-in-out;
+    top: 10px;
+    
+}
+
+
+@keyframes expandAndShrink {
+    0% {
+        width: 20px;
+        height: 16px;
+        transform: scaleX(1);
+    }
+    50% {
+        width: 30px;
+        height: 16px;
+        transform: scaleX(1.0);
+    }
+    100% {
+        width: 30px;
+        height: 16px;
+        transform: scaleX(1.1);
+    }
+}

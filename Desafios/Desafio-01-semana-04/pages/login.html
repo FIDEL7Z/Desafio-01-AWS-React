@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./../css/login.css">
+    <link rel="stylesheet" href="./../css/shared/arrow.css">
+    <link rel="stylesheet" href="./../css/shared/button.css">
+    <link rel="icon" href="./../assets/images/logo-pomo.png" type="image/png">
+    <title>Loading</title>
 </head>
 <body>
-    <h1>11</h1>
-    <script src="js/login.js"></script>
+  <div class="login-container">
+    <h1>Let's log you in</h1>
+
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="login-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="svg-img-facebook" alt="Facebook" width="20">
+      <p class="name-Facebook">Continue with Facebook</p> 
+    </a>
+  
+    <a href="https://accounts.google.com" target="_blank" rel="noopener noreferrer" class="login-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="svg-img-google" alt="Google" width="20">
+      <p class="name-Google">Continue with Google</p>
+    </a>
+  
+    <a href="https://appleid.apple.com" target="_blank" rel="noopener noreferrer" class="login-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="svg-img-apple" alt="Apple" width="16">
+      <p class="name-apple">Continue with Apple</p>
+    </a>
+
+    <p class="or">Or</p>
+    <button >Log in with E-mail</button>
+    <p class="register">Don't have an account? <a href="./register.html" class="register-link">Sing up</a></p>
+  </div>
+
+  <div class="arrow" onclick="voltarPagina()">
+    <img src="./../assets/images/svg/Vector.svg" class="svg-img" alt="Vector SVG">
+  </div>
+
+  <script src="./../js/login.js"></script>
+  <script src="./../js/utils/arrow.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+
+button {                
+    margin: 67px auto;      
+    border: none;
+    background-color: #FF6064;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 118%;               
+    height: 45px; 
+    font-size: 16px;
+    margin-left: -15px;
+}
+
+button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+    transition: transform 100ms ease-in-out, background-color 200ms ease-in-out;
+    transform: scale(1.05); 
+}
+
+button:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2); 
+    transition: transform 100ms ease-in-out, background-color 200ms ease-in-out;
+    transform: scale(0.95); 
+}

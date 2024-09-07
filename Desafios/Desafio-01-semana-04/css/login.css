@@ -1,5 +1,5 @@
-
-h1  {
+/* Estilos gerais */
+h1 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -16,7 +16,6 @@ body {
     background-color: #ffffff;
 }
 
-
 .login-container {
     text-align: center;
     max-width: 300px;
@@ -26,14 +25,11 @@ body {
     border-radius: 30px;  
     flex-direction: column;
     align-items: center;
-
 }
 
 h1 {
     font-size: 24px;
     margin-bottom: 80px;
-
-    
 }
 
 .login-btn {
@@ -58,32 +54,23 @@ h1 {
                 box-shadow 200ms ease-in-out;
 }
 
-
 p {
     margin: 0;
     font-size: 16px;
     color: #000;
 }
 
-
 .or {
     font-size: 16px;
     margin-top: 50px;
-    
 }
-
 
 .register a {
     font-size: 16px;
     margin-top: 20px;
     text-decoration: none;
     color: #FF6064;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    
 }
-
 
 .name-apple {
     margin-right: 20px;
@@ -102,7 +89,6 @@ p {
     font-family: sans-serif;
 }
 
-
 .svg-img-facebook {
     margin-right: 19px;
 }
@@ -113,4 +99,130 @@ p {
 
 .svg-img-apple {
     margin-right: 17px;
+}
+
+.arrow {
+    position: absolute;
+    left: 200px;
+    top: 20%;
+    cursor: pointer;
+}
+
+.arrow img.svg-img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 300ms ease-in-out;
+}
+
+.arrow:hover img.svg-img {
+    filter: invert(26%) sepia(84%) saturate(3323%) hue-rotate(-0deg) brightness(92%) contrast(95%);
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        justify-content: flex-start; 
+    }
+
+    .login-container {
+        padding: 30px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .arrow {
+        position: absolute;
+        left: 10px;
+        top: 5%; 
+    }
+
+    .arrow img.svg-img {
+        width: 80px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 39px;
+        margin-bottom: 100px; 
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 30px; 
+        font-size: 14px;
+        border: #cccccc 2px solid;
+    }
+
+    .or, .register a, .name-apple, .name-Google, .name-Facebook {
+        font-size: 19px;
+        font-weight: 900px;
+       
+       
+    }
+    .register,.or {
+        color: #aca8a8;
+    }
+    
+
+    .name-apple, .name-Google, .name-Facebook {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .svg-img-facebook, .svg-img-google, .svg-img-apple {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+        justify-content: flex-start; 
+    }
+
+    .login-container {
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 20px; 
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px; 
+        font-size: 12px;
+    }
+
+    .or, .register a, .name-apple, .name-Google, .name-Facebook {
+        font-size: 12px;
+    }
+
+    .name-apple, .name-Google, .name-Facebook {
+        margin-right: 5px;
+    }
+
+    .svg-img-facebook, .svg-img-google, .svg-img-apple {
+        margin-right: 5px;
+    }
+
+    .arrow {
+        position: absolute;
+        left: 10px;
+        top: 5%; 
+    }
+
+    .arrow img.svg-img {
+        width: 80px;
+        height: 20px;
+        margin-right: 10px;
+    }
 }

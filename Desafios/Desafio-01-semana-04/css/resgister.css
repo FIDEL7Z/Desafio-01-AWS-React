@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    background-color: #FF6064;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-width: 800px; 
+    width: 70%;
+    padding: 100px; 
+}
+
+.register-container {
+    background-color: #ffffff;
+    padding: 50px; 
+    border-radius: 30px;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.2);
+    width: 40%; 
+    max-width: 370px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 61px;
+    font-size: 29px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 16px;
+       justify-content: center;
+    align-items: center;
+  
+}
+
+label {
+    margin: 6px;
+    margin-left: 15px;  
+    font-size: 16px; 
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 100px;
+    border: 1px solid #000000;
+    cursor: text;
+    text-decoration: none;
+    font-size: 13px;
+    outline: none;
+}
+
+.error-message {
+    color: #FF6064;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.register-btn, .goBack {
+    border-radius: 100px;
+    width: 45%;
+    cursor: pointer;
+    padding: 12px 10px;
+    font-size: 14px;
+    margin: 1px;
+    transition: transform 100ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.register-btn {
+    background-color: #FF6064;
+    border: none;
+    color: #ffffff;
+}
+
+.goBack {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.register-btn:hover, .goBack:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.icon-container {
+    width: 45%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container img {
+    max-width: 65%;
+    height: auto;
+}
+
+

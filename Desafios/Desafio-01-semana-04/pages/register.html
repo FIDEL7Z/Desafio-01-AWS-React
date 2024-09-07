@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/resgister.css">
+    <link rel="icon" href="./../assets/images/logo-pomo.png" type="image/png">
+    <title>Register</title>
+</head>
+<body>
+
+    <div class="icon-container">
+        <img src="./../assets/images/logo-pomo.png" alt="Icon">
+    </div>
+</div>
+    <div class="container">
+       
+        <div class="register-container">
+            <h1>Create your account</h1>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Name">
+                    <span id="name-error" class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="E-mail">
+                    <span id="email-error" class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required  placeholder="Password" >
+                    <span id="password-error" class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm password">
+                    <span id="confirm-password-error" class="error-message"></span>
+                </div>
+
+                <div class="button-container">
+                    <button type="button" onclick="goBack() " class="goBack"  >Go Back</button>
+                    <button type="submit" class="register-btn">Create Account</button>
+                </div>
+            </form>
+        </div>
+
+      
+        
+
+    <script src="./../js/register.js"></script>
+</body>
+</html>

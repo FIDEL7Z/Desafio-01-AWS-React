@@ -6,7 +6,7 @@ document.getElementById('register-form').addEventListener('submit', function(eve
     let isValid = true;
 
     const name = document.getElementById('name').value.trim();
-    const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/; // Permite apenas letras e espaços, incluindo acentos
+    const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/; 
     if (name === '') {
         showError('name-error', 'Name is required');
         isValid = false;
@@ -64,7 +64,7 @@ document.getElementById('register-form').addEventListener('submit', function(eve
 function showError(id, message) {
     const errorElement = document.getElementById(id);
     errorElement.textContent = message;
-    errorElement.style.color = '#FF6064'; // Exibe a mensagem de erro em vermelho
+    errorElement.style.color = '#FF6064'; 
 }
 
 function clearErrors() {
@@ -82,5 +82,11 @@ function sanitizeInput(input) {
 }
 
 function goBack() {
-    window.history.back(); 
+    const previousPage = document.referrer;  
+
+    if (previousPage.includes('register.html')) {
+        window.location.href = './../pages/login.html';  
+    } else {
+        window.history.back();  
+    }
 }

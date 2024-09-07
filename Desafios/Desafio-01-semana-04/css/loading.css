@@ -19,5 +19,62 @@ div {
 .loading {
     width: 60px;
     height: 60px;
+
 }
-    
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 1024px (tablets e dispositivos menores) */
+@media (max-width: 1024px) {
+    div {
+        gap: 100px;
+    }
+
+    .logo-pomo, .loading {
+        width: 180px;
+        height: 180px;
+    }
+
+    .loading {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Para telas menores que 768px (celulares) */
+@media (max-width: 768px) {
+    div {
+        gap: 110px;
+    }
+
+    .logo-pomo, .loading {
+        width: 150px;
+        height: 150px;
+    }
+
+    .loading {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Para telas menores que 480px (celulares muito pequenos) */
+@media (max-width: 480px) {
+    div {
+        gap: 30px;
+        height: 10vh;
+    }
+
+    .logo-pomo, .loading {
+        width: 170px;
+        margin-bottom:  80px; ;
+        margin-top: 190px;
+        height: 200px;
+    }
+
+    .loading {
+        width: 50px;
+        margin: 80px 0;
+        height: 90px;
+    }
+}

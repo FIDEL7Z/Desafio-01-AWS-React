@@ -22,7 +22,7 @@ body {
     padding: 50px; 
     border-radius: 30px;
     box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.2);
-    width: 40%; 
+    width: 90%; 
     max-width: 370px; 
     display: flex;
     flex-direction: column;
@@ -49,6 +49,11 @@ label {
     margin-left: 15px;  
     font-size: 16px; 
     align-items: center;
+}
+input::placeholder {
+    color: #999999; 
+    font-size: 14px; 
+    opacity: 1; 
 }
 
 input {
@@ -98,6 +103,7 @@ input {
 .goBack {
     background-color: #ffffff;
     border: 1px solid #000000;
+
     color: #000000;
 }
 
@@ -106,7 +112,8 @@ input {
     transform: scale(1.05);
 }
 
-.icon-container {
+.icon
+-container {
     width: 45%; 
     display: flex;
     justify-content: center;
@@ -118,4 +125,126 @@ input {
     height: auto;
 }
 
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch; /* Certifica que os elementos ocupem todo o espaço */
+        height: 100vh; /* Mantém a altura total da viewport */
+    }
 
+    .container {
+        flex-direction: column-reverse; /* Inverte a ordem: coloca o formulário abaixo da imagem */
+        justify-content: flex-end; /* Faz o formulário ficar na parte inferior */
+        align-items: center;
+        width: 100%; /* Ocupa toda a largura */
+        padding: 0; /* Remove qualquer padding desnecessário */
+        height: 100%; /* Ocupa toda a altura */
+    }
+
+    .icon-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon-container img {
+        max-width: 40%; /* Ajusta a imagem para 50% da tela */
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .register-container {
+        width: 190%;
+        max-width: 100%; /* Ocupa toda a largura da tela */
+        padding: 100px;
+        padding-bottom: 640px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        border-radius: 4cap 40px 0 0; /* Arredonda o topo do formulário */
+    }
+
+
+    label {
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        font-size: 57px;
+        font-weight: 300; 
+    }
+
+
+    input {
+        width: 100%; /* Os inputs ocupam toda a largura */
+        font-size: 29px; /* Aumenta o tamanho da fonte */
+        padding: 21px; /* Aumenta o espaçamento interno */
+        
+    }
+
+    .button-container {
+        margin-top: 29px;
+        gap: 18px; /* Espaçamento entre os botões */
+    }
+
+    .register-btn, .goBack {
+        width: 100%; /* Os botões ocupam a largura total */
+        padding: 30px; /* Aumenta o espaçamento interno */
+        font-size: 23px;
+
+        
+
+        
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100vh;
+    }
+
+    .container {
+        flex-direction: column-reverse; /* Inverte a ordem para telas pequenas */
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon-container img {
+        max-width: 60%; /* Ajusta o tamanho da imagem para telas muito pequenas */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .register-container {
+        width: 100%;
+        max-width: 100%;
+        background-color: #ffffff;
+        border-radius: 30px 30px 0 0;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .button-container {
+        margin-bottom: 20px;
+    }
+
+    .register-btn, .goBack {
+        font-size: 12px;
+        padding: 10px;
+        width: 100%;
+    }
+}

@@ -1,4 +1,4 @@
-/* Estilos gerais */
+
 h1 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -119,7 +119,7 @@ p {
 }
 
 
-/* Estilos responsivos */
+
 @media (max-width: 768px) {
     body {
         padding: 0;

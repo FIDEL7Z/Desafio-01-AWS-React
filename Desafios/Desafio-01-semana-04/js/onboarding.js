@@ -45,3 +45,5 @@ voltarBtn.addEventListener('click', () => {
 });
 
 mostrarSlide(indiceAtual);
+
+

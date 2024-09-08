@@ -3,7 +3,6 @@
     max-width: 500px;
     text-align: center;
 }
-
 .navigation button {
     padding: 0;
     margin: 5px;
@@ -142,7 +141,7 @@
     .arrow img.svg-img {
         width: 110px;
         height: 30px;
-        margin-right: 20px; /* Ajustado para centralizar */
+        margin-right: 20px; 
     }
 
     img {

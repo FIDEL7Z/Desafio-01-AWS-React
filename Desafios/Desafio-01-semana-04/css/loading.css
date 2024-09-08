@@ -22,9 +22,9 @@ div {
 
 }
 
-/* Media Queries para Responsividade */
 
-/* Para telas menores que 1024px (tablets e dispositivos menores) */
+
+
 @media (max-width: 1024px) {
     div {
         gap: 100px;
@@ -41,7 +41,7 @@ div {
     }
 }
 
-/* Para telas menores que 768px (celulares) */
+
 @media (max-width: 768px) {
     div {
         gap: 110px;
@@ -58,7 +58,7 @@ div {
     }
 }
 
-/* Para telas menores que 480px (celulares muito pequenos) */
+
 @media (max-width: 480px) {
     div {
         gap: 30px;

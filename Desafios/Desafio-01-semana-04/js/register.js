@@ -81,12 +81,7 @@ function sanitizeInput(input) {
     return tempElement.innerHTML;
 }
 
-function goBack() {
-    const previousPage = document.referrer;  
+document.getElementById('goBackBtn').addEventListener('click', function() {
+    window.location.href = './../pages/login.html'; // Caminho para a página de login
+});
 
-    if (previousPage.includes('register.html')) {
-        window.location.href = './../pages/login.html';  
-    } else {
-        window.history.back();  
-    }
-}

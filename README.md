@@ -16,7 +16,7 @@ Este projeto foi desenvolvido como parte de um **desafio da bolsa UOL Compass**,
 ## Estrutura do Projeto
 
 ```bash
-Desafio-01-semana-04/
+Desafio-01-AWS-React/
 │
 ├── index.html              # Tela de carregamento
 │

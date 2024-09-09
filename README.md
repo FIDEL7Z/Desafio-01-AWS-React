@@ -12,7 +12,7 @@ O projeto é totalmente **responsivo**, adaptando-se a dispositivos móveis e de
 
 Este projeto foi desenvolvido como parte de um **desafio da bolsa UOL Compass**, servindo como uma oportunidade para aplicar habilidades em desenvolvimento web e responsividade.
 
-![alt text](pomo.png)
+![alt text](assets/images/pomo.png)
 ## Estrutura do Projeto
 
 ```bash
@@ -83,24 +83,3 @@ Aqui estão os GitHub dos instrutores que estão me orientando durante o program
     <td><a href="https://github.com/Felipe-15" style="color: #FF4500; font-weight: bold;">Felipe Souza</a></td>
   </tr>
 </table>
-
-## Como Clonar este Repositório
-
-Para clonar este repositório em sua máquina local, siga estas etapas:
-
-1. **Abra o terminal** ou prompt de comando.
-2. **Digite o comando abaixo** e pressione Enter:
-
-    ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    ```
-
-3. **Acesse o diretório** do repositório clonado:
-
-    ```bash
-    cd seu-repositorio
-    ```
-
-Substitua `seu-usuario` e `seu-repositorio` pelo seu nome de usuário e o nome do repositório, respectivamente. Após clonar o repositório, você pode começar a explorar e contribuir com o projeto.
-
----
